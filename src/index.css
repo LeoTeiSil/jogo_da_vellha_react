@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a0033, #330066); 
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #CC66FF; 
+}
+
+.game {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center;
+  height: 100vh;
+  gap: 50px;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(153, 51, 255, 0.1); 
+  padding: 30px; 
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(153, 51, 255, 0.7), 0 0 30px rgba(153, 51, 255, 0.3);
+  border: 1px solid #9933FF; 
+}
+
+.game-info {
+  font-size: 18px;
+  color: #CC66FF; 
+  background: rgba(153, 51, 255, 0.1); 
+  border: 2px solid #9933FF;
+  border-radius: 15px;
+  padding: 20px;
+  min-width: 200px;
+  box-shadow: 0 0 10px rgba(153, 51, 255, 0.5); 
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  background-color: #330066; 
+  border: 2px solid #9933FF; 
+  border-radius: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #CC66FF; 
+  margin: 3px;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1), 0 0 5px rgba(153, 51, 255, 0.5);
+}
+
+.square:hover {
+  background-color: #4d0099; 
+  transform: scale(1.05);
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1), 0 0 15px #9933FF; 
+}
+
+.square:focus {
+  outline: none;
+}
+
+.status {
+  font-size: 24px; 
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #FF66FF; 
+  text-shadow: 0 0 5px #FF66FF, 0 0 10px #FF66FF; 
+}
+
+button {
+  margin-top: 8px;
+  padding: 10px 15px;
+  background: #9933FF; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(153, 51, 255, 0.7);
+}
+
+button:hover {
+  background: #CC66FF; 
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(204, 102, 255, 1); 
+}
+
+button:disabled {
+  background-color: #663399; 
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.restart-btn {
+  background: #FF66FF; 
+}
+
+.restart-btn:hover {
+  background: #FF99FF; 
+}
